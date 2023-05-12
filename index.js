@@ -5,9 +5,7 @@ require("dotenv").config();
 const express = require("express");
 
 // Importing the Database Connection
-const db = require("./db/connect");
-
-db();
+require("./dbconfig")
 
 // Importing the Routes
 const mentorRoutes = require("./routes/mentors.routes");
